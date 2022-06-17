@@ -4,6 +4,8 @@ echo 正在导入服务. . .
 
 curl -sSL https://hxhgts.github.io/debian_rc-local_service/service/rc-local.service > /etc/systemd/system/rc-local.service
 
+systemctl daemon-reload
+
 echo 正在创建默认rc.local文件. . .
 
 curl -sSL https://hxhgts.github.io/debian_rc-local_service/etc/rc.local > /etc/rc.local
